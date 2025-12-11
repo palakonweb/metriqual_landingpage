@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { BackgroundLines } from "@/components/ui/background-lines";
 
-// DESKTOP NAV (Aceternity)
 import NavbarMenu from "@/components/ui/navbar-menu";
 
 export default function Home() {
@@ -15,29 +14,28 @@ export default function Home() {
       id="home"
       className="relative w-full min-h-screen overflow-hidden font-poppins"
     >
-      {/* BG IMAGE */}
+   
       <div
         className="absolute inset-0 bg-cover bg-center h-200 w-full z-0"
         style={{ backgroundImage: "url('/hero.png')" }}
       />
 
-      {/* BACKGROUND LINES */}
+     
       <div className="absolute inset-0 z-10 opacity-[0.35] pointer-events-none">
         <BackgroundLines />
       </div>
 
-      {/* BOTTOM GRADIENT ONLY */}
+  
       <div className="absolute bottom-0 w-full h-[60%] bg-gradient-to-t from-black/70 via-black/40 to-transparent z-20" />
 
-      {/* TOP NAVBAR AREA */}
+    
       <header className="fixed top-0 left-0 w-full z-[60] px-4 md:px-6 py-4 flex items-center justify-between mt-5">
 
-        {/* LOGO */}
+     
         <div className="text-white text-2xl font-medium tracking-wide">
           METRIQUAL
         </div>
 
-        {/* DESKTOP NAV */}
         <div className="hidden md:flex justify-center flex-1">
           <NavbarMenu />
         </div>
@@ -108,7 +106,7 @@ export default function Home() {
         <div className="w-full flex justify-center mt-6">
           <div className="neon-border rounded-2xl w-[92%] sm:w-[80%] md:w-[55%]">
             <img
-              src="/heroimg.png"
+              src="/dashboard.jpg"
               alt="Dashboard"
               className="w-full h-auto rounded-2xl"
             />
